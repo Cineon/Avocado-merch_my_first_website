@@ -1,0 +1,406 @@
+/* ogólne */
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a
+{
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #06376c;
+    text-decoration: none;
+}
+
+#kontener
+{
+    border-bottom: 0px;
+    width: 1004px;
+    margin: 0 auto;
+}
+/* koniec ogólne */
+
+
+/* gorna_czesc_kontenera */
+#gorna_czesc_kontenera
+{
+    margin-top: 10px;
+    background-image: url(images/gorne_menu_background.jpg);
+    width: 942px;
+    height: 113px;
+    position: relative;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+img.logo
+{
+    position: absolute; /* pozycjonowanie względem #gorna_czesc_kontenera */
+    left: 30px;
+    top: 8px;
+}
+
+#kontakt_box
+{
+    position: absolute; /* pozycjonowanie względem #gorna_czesc_kontenera */
+    right: 40px;
+    top: 8px;
+    font-size: 12px;
+    line-height: 145%;
+}
+
+#nagłówek
+{
+    position: absolute; /* pozycjonowanie względem #gorna_czesc_kontenera */
+    top: 20px;
+    left: 300px;
+    font-size: 35px;
+    color: #bc2e1e;
+    text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+}
+
+/* gorne_menu */
+#gorne_menu
+{
+    position: absolute; /* pozycjonowanie względem #gorna_czesc_kontenera */
+    left: 120px;
+    bottom: 0px;
+}
+
+#wlasciwe_gorne_menu li
+{
+    list-style-type: none;
+    float: left;
+}
+
+#wlasciwe_gorne_menu li a
+{
+    background-image: url(images/srodek_menu_gornego.gif);
+    height: 31px;
+    float: left;
+    border-bottom: none;
+    padding: 0px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+span.link
+{
+    display: inline-block;
+    margin-top: 8px;
+    /* trick ze spanem, żeby wyrównać pionowo tekst w menu (id = wlasciwe_gorne_menu) */
+}
+
+#wlasciwe_gorne_menu li.gorne_menu
+{
+    border: 1px solid black;
+    border-right: none;
+}
+
+#wlasciwe_gorne_menu li a:hover
+{
+    background-image: url(images/srodek_menu_gornego_hover.gif);
+    color: #cccccc;
+}
+/* Koniec gorne_menu */
+/* koniec górna_czesc_kontenera */
+
+
+/* srodkowe_menu */
+#srodkowe_menu
+{
+    background-image: url('images/srodkowe_menu.gif');
+    width: 944px;
+    height: 32px;
+}
+
+#srodkowe_menu li
+{
+    float: left;
+    list-style-type: none;
+}
+
+#srodkowe_menu li a
+{  
+    color: #C7C7D4;
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#srodkowe_menu li a:hover
+{
+    color: white;
+}
+
+#srodkowe_menu #pierwszy_poziom
+{
+    margin-left: 35px;
+}
+
+#srodkowe_menu #pierwszy_poziom span.kafelek_menu
+{
+   width: 160px;
+   display: inline-block;
+   margin-top: 8px;
+}
+
+#srodkowe_menu #pierwszy_poziom span.odstep
+{
+    display: inline-block;
+    width: 10px;
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* rozwijane_menu */
+#pierwszy_poziom li
+{
+    position: relative;
+    height: 32px;
+    /* Pozycjonowanie względem pierwszy_poziom --> li */
+}
+
+#pierwszy_poziom li .drugi_poziom
+{
+    display: none;
+    position: absolute;
+    top: 32px;
+}
+
+#pierwszy_poziom li:hover .drugi_poziom
+{
+    display: block;
+    width: 160px;
+    background-color: rgba(15, 50, 80, 0.9);
+
+}
+
+
+#pierwszy_poziom li .drugi_poziom li
+{
+    text-align: center;
+    width: 159px;
+    border-left: 2px solid grey;
+    border-right: 1px solid grey;
+    padding-bottom: 8px;
+    opacity: 0.7;
+}
+
+#pierwszy_poziom li .drugi_poziom li a
+{
+    display: block;
+    padding: 8px;
+}
+
+#pierwszy_poziom li .drugi_poziom li a:hover
+{
+    background-color: grey;
+}
+/* koniec rozwijane_menu */
+/* koniec srodkowe_menu */
+
+
+/* ZAWARTOSC GLOWNA */
+#zawartosc
+{
+    width: 944px;
+}
+
+#gorna_czesc_zawartosci
+{
+    background-image: url('images/gorna_czesc_zawartosci.gif');
+    width: 944px;
+    height: 17px;
+}
+
+#srodkowa_czesc_zawartosci
+{
+    background-image: url('images/srodkowa_czesc_zawartosci.gif');
+    width: 944px;
+    background-repeat: repeat-y;
+}
+
+#dolna_czesc_zawartosci
+{
+    background-image: url('images/dolna_czesc_zawartosci.gif');
+    width: 944px;
+    height: 31px;
+}
+
+#tekst
+{
+    text-align: justify;
+    padding: 10px 50px;
+    line-height: 140%;
+    font-size: 13px;
+    font-family: "Trebuchet MS", Arial, Helvetica;
+}
+
+h1
+{
+    font-size: 20px;
+    text-align: center;
+    color: #0A3C72;
+    margin-bottom: 22px;
+    font-family: Calibri, Tahoma, Arial;
+    font-style: italic;
+}
+
+h3
+{
+    font-size: 18px;
+    color: #0A3C72;
+    margin-bottom: 15px;
+    font-family: Calibri, Tahoma, Arial;
+    font-style: italic;
+}
+
+p
+{
+    margin-bottom: 15px;
+}
+
+#tekst ul
+{
+    margin: 20px;
+    margin-left: 25px;
+    list-style-image: url('images/ol.gif');
+}
+
+#tekst li
+{
+    margin-bottom: 5px;
+}
+
+
+#zawartosc .boczny_tekst
+{
+    background: rgb(59,188,190);
+    background: linear-gradient(0deg, rgba(59,188,190,0.5) 0%, rgba(249,84,220,0.5) 100%);
+    border: 1px dotted gray;
+    padding: 20px 15px;
+    text-align: left;
+    float: right;
+    width: 150px;
+    margin: 10px 20px;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+#zawartosc .obrazki #ig
+{
+    float: right;
+    clear: right;
+    width: 80px;
+    height: 79px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+#zawartosc .obrazki #fb
+{
+    float: right;
+    width: 80px;
+    height: 79px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+/* KONIEC ZAWARTOSC GLOWNA */
+
+
+/* dolna_czesc_strony */
+#dolna_czesc_strony
+{
+    background-image: url(images/dol_strony.gif);
+    width: 944px;
+    height: 113px;
+    margin-bottom: 10px;
+}
+
+#newsletter_icon
+{
+    float: left;
+    margin-left: 20px;
+}
+
+#newsletter_tekst
+{
+    color: white;
+    text-align: left;
+    padding-top: 15px;
+}
+
+#newsletter_naglowek
+{
+    font-size: 15px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+}
+
+#newsletter_form
+{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.input_text
+{
+    background-color: gray;
+    font-size: 12px;
+}
+
+.submit_button
+{
+    padding: 5px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 2px;
+}
+
+.submit_button
+{
+    border: 1px solid rgb(0,0,0);
+    box-shadow: 0 0 2px 0 rgb(0,0,0);
+}
+
+#newsletter_info
+{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+/* koniec dolna_czesc_strony */
+
+#stopka
+{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
